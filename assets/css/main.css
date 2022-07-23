@@ -25,6 +25,14 @@
     --font-bold: 700;
 }
 
+.dark {
+    --primary-color: #1d1d4d;
+    --secondary-color: #363c4d;
+    /*Typography*/
+    --text-color: #e8ecf8;
+}
+
+
 html {
     font-size: 17px;
 }
@@ -36,6 +44,12 @@ body {
     height: 600px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    transition: linear .4s;
+    -webkit-transition: linear .4s;
+    -moz-transition: linear .4s;
+    -ms-transition: linear .4s;
+    -o-transition: linear .4s;
 }
 
 /* heading */
@@ -43,6 +57,7 @@ body {
     text-align: center;
     margin: 3rem 0;
     font-weight: var(--font-bold);
+    font-size: 40px;
 }
 
 /* container   */
@@ -68,9 +83,6 @@ body {
     /* to remove the scroll bar  */
     width: initial;
 }
-
-
-
 
 
 
@@ -119,8 +131,28 @@ body {
 
 }
 
+.icons {
+    display: flex;
+    font-size: 2rem;
+    color: var(--text-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.icons>i {
+    cursor: pointer;
+    display: none;
+}
+
+i.show {
+    display: block;
+}
+
+
+
 /* Containe Style for Mobile  */
-@media screen and (max-width:500px) {
+@media screen and (max-width:1000px) {
 
     .container {
         width: 95%;
