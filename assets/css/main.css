@@ -25,10 +25,11 @@
     --font-bold: 700;
 }
 
+
+
 .dark {
     --primary-color: #1d1d4d;
     --secondary-color: #363c4d;
-    /*Typography*/
     --text-color: #e8ecf8;
 }
 
@@ -148,6 +149,8 @@ body {
 i.show {
     display: block;
 }
+
+
 
 
 
